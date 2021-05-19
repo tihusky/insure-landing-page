@@ -1,0 +1,18 @@
+{
+    "name": "insure-landing-page",
+    "version": "1.0.0",
+    "description": "Frontend Mentor Challenge",
+    "main": "index.html",
+    "scripts": {
+        "server": "live-server",
+        "sass": "sass --watch scss/main.scss css/main.css",
+        "all": "run-p server sass"
+    },
+    "author": "Mirko Förster",
+    "license": "ISC",
+    "devDependencies": {
+        "live-server": "^1.2.1",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.32.13"
+    }
+}
