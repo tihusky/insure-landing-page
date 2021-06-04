@@ -1,3 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+:root {
+  --clr-white: rgb(255, 255, 255);
+  --clr-offwhite: rgb(250, 250, 250);
+  --clr-blue-light: rgb(150, 169, 198);
+  --clr-blue-dark: rgb(45, 38, 65);
+  --clr-grey-light: rgb(131, 125, 136);
+  --clr-grey-dark: rgb(44, 40, 48);
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.mt-tiny {
+  margin-top: 1rem !important;
+}
+
+.mt-small {
+  margin-top: 1.5rem !important;
+}
+
+.mt-medium {
+  margin-top: 2rem !important;
+}
+
+.mt-large {
+  margin-top: 2.5rem !important;
+}
+
+.mt-huge {
+  margin-top: 5rem !important;
+}
+
+.tc-light {
+  color: var(--clr-white);
+}
+
+.tc-medium {
+  color: var(--clr-grey-light);
+}
+
+.tc-dark {
+  color: var(--clr-grey-dark);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  letter-spacing: -0.67px;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  letter-spacing: -0.56px;
+}
+.heading-secondary--large {
+  font-size: 3rem;
+  letter-spacing: -0.67px;
+}
+
+.heading-tertiary {
+  font-size: 1.75rem;
+  letter-spacing: -0.39px;
+}
+
+.container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.fw-wrap {
+  flex-wrap: wrap;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=main.css.map */
