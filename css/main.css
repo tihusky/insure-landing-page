@@ -18,6 +18,11 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .mt-tiny {
   margin-top: 1rem !important;
 }
@@ -97,6 +102,33 @@ body {
 
 .jc-between {
   justify-content: space-between;
+}
+
+.header {
+  padding: 1.875rem 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger__btn-hide {
+  display: none;
+}
+
+.logo {
+  width: 7rem;
+}
+.logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.nav-desktop {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
