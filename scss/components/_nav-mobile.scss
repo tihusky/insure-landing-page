@@ -23,7 +23,7 @@
     &__item {
         text-align: center;
 
-        &+& {
+        & + & {
             margin-top: 1.25rem;
         }
     }
@@ -44,5 +44,9 @@
     &__link:hover {
         color: var(--clr-blue-light);
         outline: 0;
+    }
+
+    @media (min-width: 48.75em) {
+        display: none;
     }
 }
