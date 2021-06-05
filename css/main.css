@@ -133,7 +133,6 @@ body {
 .btn--large {
   width: 75%;
   max-width: 25rem;
-  margin-top: 0.625em;
   padding: 0.625em;
   font-size: 1.25rem;
   letter-spacing: 1.35px;
@@ -190,9 +189,11 @@ body {
 .nav-mobile__item {
   text-align: center;
 }
+.nav-mobile__item + .nav-mobile__item {
+  margin-top: 1.25rem;
+}
 .nav-mobile__link:link, .nav-mobile__link:visited {
   display: inline-block;
-  padding: 0.625rem 1rem;
   color: var(--clr-white);
   font-size: 1.25rem;
   font-weight: 700;
