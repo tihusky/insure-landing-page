@@ -1,0 +1,44 @@
+.nav-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2.5rem 1.5rem;
+    background: url('../images/bg-pattern-mobile-nav.svg') no-repeat bottom center / contain, var(--clr-grey-dark);
+    transform: translateY(-100%);
+    z-index: -1; // Positions this element behind its parent
+
+    &.show {
+        transform: translateY(0);
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__link:link,
+    &__link:visited {
+        display: inline-block;
+        padding: 0.625rem 1rem;
+        color: var(--clr-white);
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 1.35px;
+        line-height: 2;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__link:focus,
+    &__link:hover {
+        color: var(--clr-blue-light);
+        outline: 0;
+    }
+}

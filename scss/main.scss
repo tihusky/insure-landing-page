@@ -6,3 +6,12 @@
 
 @use "layout/container";
 @use "layout/flex";
+@use "layout/header";
+
+@use "components/buttons";
+@use "components/hamburger";
+@use "components/logo";
+@use "components/nav-desktop";
+@use "components/nav-mobile";
+
+@use "pages/home";
