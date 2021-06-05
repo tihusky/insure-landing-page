@@ -6,6 +6,7 @@
   --clr-blue-dark: rgb(45, 38, 65);
   --clr-grey-light: rgb(131, 125, 136);
   --clr-grey-dark: rgb(44, 40, 48);
+  --header-height: 6.25rem;
 }
 
 *,
@@ -110,9 +111,14 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--header-height);
   padding: 1.875rem 1.5rem;
   background-color: var(--clr-white);
+  z-index: 200;
 }
 
 .btn {
@@ -162,15 +168,16 @@ body {
 }
 
 .nav-mobile {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: var(--header-height);
   left: 0;
   right: 0;
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
   padding: 2.5rem 1.5rem;
   background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom center/contain, var(--clr-grey-dark);
   transform: translateY(-100%);
-  z-index: -1;
+  transition: transform 0.35s ease-out;
+  z-index: 100;
 }
 .nav-mobile.show {
   transform: translateY(0);

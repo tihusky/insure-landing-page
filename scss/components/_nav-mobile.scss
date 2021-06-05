@@ -1,13 +1,14 @@
 .nav-mobile {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: var(--header-height);
     left: 0;
     right: 0;
-    height: 100vh;
+    height: calc(100vh - var(--header-height));
     padding: 2.5rem 1.5rem;
     background: url('../images/bg-pattern-mobile-nav.svg') no-repeat bottom center / contain, var(--clr-grey-dark);
     transform: translateY(-100%);
-    z-index: -1; // Positions this element behind its parent
+    transition: transform 0.35s ease-out;
+    z-index: 100;
 
     &.show {
         transform: translateY(0);
