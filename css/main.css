@@ -24,6 +24,10 @@ img {
   max-width: 100%;
 }
 
+.fullheight {
+  height: 100%;
+}
+
 .mt-tiny {
   margin-top: 1rem !important;
 }
@@ -150,6 +154,12 @@ body {
   border: 1px solid var(--clr-white);
 }
 
+@media (min-width: 48.75em) {
+  .btn-nav-mobile {
+    display: none;
+  }
+}
+
 .hamburger__btn-hide {
   display: none;
 }
@@ -205,6 +215,11 @@ body {
 .nav-mobile__link:focus, .nav-mobile__link:hover {
   color: var(--clr-blue-light);
   outline: 0;
+}
+@media (min-width: 48.75em) {
+  .nav-mobile {
+    display: none;
+  }
 }
 
 .main {
