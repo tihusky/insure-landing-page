@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
 
 body {
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
 }
 
 //////////////////////////////
 // Text Colours
 
 .tc-light {
-    color: var(--clr-white);
+	color: var(--clr-white);
 }
 
 .tc-medium {
-    color: var(--clr-grey-light);
+	color: var(--clr-grey-light);
 }
 
 .tc-dark {
-    color: var(--clr-grey-dark);
+	color: var(--clr-grey-dark);
 }
 
 //////////////////////////////
@@ -26,28 +26,45 @@ body {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-    margin: 0;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    line-height: 1;
+	margin: 0;
+	font-family: 'DM Serif Display', serif;
+	font-weight: 400;
+	line-height: 1;
 }
 
 .heading-primary {
-    font-size: 3rem;
-    letter-spacing: -0.67px;
+	font-size: 3rem;
+	letter-spacing: -0.67px;
+
+	@media (min-width: 52.5em) {
+		font-size: 3.75rem;
+		letter-spacing: -1px;
+	}
+
+	@media (min-width: 68.75em) {
+		font-size: 4.5rem;
+	}
 }
 
 .heading-secondary {
-    font-size: 2.5rem;
-    letter-spacing: -0.56px;
+	font-size: 2.5rem;
+	letter-spacing: -0.56px;
 
-    &--large {
-        font-size: 3rem;
-        letter-spacing: -0.67px;
-    }
+	&--large {
+		font-size: 3rem;
+		letter-spacing: -0.67px;
+	}
 }
 
 .heading-tertiary {
-    font-size: 1.75rem;
-    letter-spacing: -0.39px;
+	font-size: 1.75rem;
+	letter-spacing: -0.39px;
+}
+
+//////////////////////////////
+// Paragraphs
+
+.paragraph {
+	font-size: 1rem;
+	line-height: 1.625;
 }

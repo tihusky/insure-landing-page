@@ -1,4 +1,120 @@
-.main {
-    position: relative;
-    z-index: -10; // Positions main content behind mobile nav
+//////////////////////////////
+// Hero Section
+
+.hero {
+	padding-top: var(--header-height);
+	background: var(--clr-blue-dark);
+
+	@media (min-width: 48.75em) {
+		position: relative;
+		padding: calc(var(--header-height) + 10rem) 1.5rem 0;
+		background: linear-gradient(0deg,
+				var(--clr-white) 0%,
+				var(--clr-white) 8rem,
+				var(--clr-blue-dark) 8rem,
+				var(--clr-blue-dark) 100%);
+
+		// Add background patterns to hero section (outside of container) on desktop
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			content: url('../images/bg-pattern-intro-left-desktop.svg');
+			transform: translate(-50%, 55%);
+
+			@media (min-width: 68.75em) {
+				transform: translate(-25%, 50%);
+			}
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			content: url('../images/bg-pattern-intro-right-desktop.svg');
+			transform: translateX(65%);
+
+			@media (min-width: 68.75em) {
+				transform: translateX(25%);
+			}
+		}
+	}
+
+	&__body {
+		position: relative;
+		padding: 5.625rem 1.5rem;
+		background: url('../images/bg-pattern-intro-left-mobile.svg') no-repeat top left;
+		text-align: center;
+
+		@media (min-width: 48.75em) {
+			padding: 4rem 0 16rem;
+			background: none;
+			text-align: left;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 9.375rem;
+				height: 1px;
+				background-color: var(--clr-white);
+				content: '';
+			}
+		}
+
+		& > * {
+			position: relative;
+			z-index: 10;
+		}
+
+		&::after {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			content: url('../images/bg-pattern-intro-right-mobile.svg');
+			transform: translateY(55%);
+
+			@media (min-width: 48.75em) {
+				display: none;
+			}
+		}
+	}
+
+	&__image-container {
+		order: -1;
+
+		@media (min-width: 48.75em) {
+			order: 1;
+		}
+	}
+
+	&__image--mobile,
+	&__image--desktop {
+		object-fit: cover;
+	}
+
+	&__image--mobile {
+		width: 100%;
+		max-height: 30rem;
+
+		@media (min-width: 37.5em) {
+			display: none;
+		}
+	}
+
+	&__image--desktop {
+		display: none;
+
+		// Switch to higher resolution version early
+		@media (min-width: 37.5em) {
+			display: initial;
+			width: 100%;
+			max-height: 30rem;
+		}
+
+		@media (min-width: 48.75em) {
+			height: 100%;
+			max-height: unset;
+		}
+	}
 }
