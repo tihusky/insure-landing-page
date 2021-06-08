@@ -51,12 +51,10 @@
 		position: relative;
 		padding: 5.625rem 1.5rem;
 		background: url('../images/bg-pattern-intro-left-mobile.svg') no-repeat top left;
-		text-align: center;
 
 		@media (min-width: $tablet) {
 			padding: 4rem 0 16rem;
 			background: none;
-			text-align: left;
 
 			&::before {
 				position: absolute;
