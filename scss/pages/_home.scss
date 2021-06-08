@@ -1,3 +1,9 @@
+/* beautify ignore:start */
+
+@use "../abstracts/variables" as *;
+
+/* beautify ignore:end */
+
 //////////////////////////////
 // Hero Section
 
@@ -5,7 +11,7 @@
 	padding-top: var(--header-height);
 	background: var(--clr-blue-dark);
 
-	@media (min-width: 48.75em) {
+	@media (min-width: $tablet) {
 		position: relative;
 		padding: calc(var(--header-height) + 10rem) 1.5rem 0;
 		background: linear-gradient(0deg,
@@ -13,6 +19,7 @@
 				var(--clr-white) 8rem,
 				var(--clr-blue-dark) 8rem,
 				var(--clr-blue-dark) 100%);
+		overflow: visible;
 
 		// Add background patterns to hero section (outside of container) on desktop
 		&::before {
@@ -22,7 +29,7 @@
 			content: url('../images/bg-pattern-intro-left-desktop.svg');
 			transform: translate(-50%, 55%);
 
-			@media (min-width: 68.75em) {
+			@media (min-width: $desktop) {
 				transform: translate(-25%, 50%);
 			}
 		}
@@ -34,8 +41,8 @@
 			content: url('../images/bg-pattern-intro-right-desktop.svg');
 			transform: translateX(65%);
 
-			@media (min-width: 68.75em) {
-				transform: translateX(25%);
+			@media (min-width: $desktop) {
+				transform: translateX(0);
 			}
 		}
 	}
@@ -46,7 +53,7 @@
 		background: url('../images/bg-pattern-intro-left-mobile.svg') no-repeat top left;
 		text-align: center;
 
-		@media (min-width: 48.75em) {
+		@media (min-width: $tablet) {
 			padding: 4rem 0 16rem;
 			background: none;
 			text-align: left;
@@ -74,7 +81,7 @@
 			content: url('../images/bg-pattern-intro-right-mobile.svg');
 			transform: translateY(55%);
 
-			@media (min-width: 48.75em) {
+			@media (min-width: $tablet) {
 				display: none;
 			}
 		}
@@ -83,7 +90,7 @@
 	&__image-container {
 		order: -1;
 
-		@media (min-width: 48.75em) {
+		@media (min-width: $tablet) {
 			order: 1;
 		}
 	}
@@ -112,9 +119,16 @@
 			max-height: 30rem;
 		}
 
-		@media (min-width: 48.75em) {
+		@media (min-width: $tablet) {
 			height: 100%;
 			max-height: unset;
 		}
 	}
+}
+
+//////////////////////////////
+// Features Section
+
+.features {
+	margin-top: 9.375rem;
 }
