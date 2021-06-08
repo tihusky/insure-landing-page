@@ -1,0 +1,21 @@
+/* beautify ignore:start */
+
+@use "../abstracts/variables" as *;
+
+/* beautify ignore:end */
+
+.card {
+	text-align: center;
+
+	&__icon {
+		margin: 0 auto;
+	}
+
+	@media (min-width: $tablet) {
+		text-align: left;
+
+		&__icon {
+			margin: 0;
+		}
+	}
+}

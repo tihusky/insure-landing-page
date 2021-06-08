@@ -34,6 +34,13 @@
 }
 
 //////////////////////////////
+// row-gap
+
+.gap-vertical {
+	row-gap: var(--gap-vertical) !important;
+}
+
+//////////////////////////////
 // column-gap
 
 .gap-horizontal {
