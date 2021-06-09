@@ -503,7 +503,7 @@ body {
 @media (min-width: 60em) {
   .hero {
     position: relative;
-    padding: calc(var(--header-height) + 10rem) 1.5rem 0;
+    padding: calc(var(--header-height) + 6.5625rem) 1.5rem 0;
     background: linear-gradient(0deg, var(--clr-white) 0%, var(--clr-white) 8rem, var(--clr-blue-dark) 8rem, var(--clr-blue-dark) 100%);
     overflow: visible;
   }
