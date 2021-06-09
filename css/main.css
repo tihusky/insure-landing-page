@@ -291,6 +291,8 @@ body {
   z-index: 200;
 }
 
+/* beautify ignore:start */
+/* beautify ignore:end */
 .btn {
   display: inline-block;
   border: 0;
@@ -334,7 +336,7 @@ body {
 .btn-nav-mobile {
   padding: 0;
 }
-@media (min-width: 48.75em) {
+@media (min-width: 60em) {
   .btn-nav-mobile {
     display: none;
   }
@@ -382,10 +384,12 @@ body {
   justify-content: space-between;
 }
 
+/* beautify ignore:start */
+/* beautify ignore:end */
 .nav-desktop {
   display: none;
 }
-@media (min-width: 48.75em) {
+@media (min-width: 60em) {
   .nav-desktop {
     display: initial;
   }
@@ -412,6 +416,8 @@ body {
   }
 }
 
+/* beautify ignore:start */
+/* beautify ignore:end */
 .nav-mobile {
   position: fixed;
   top: var(--header-height);
@@ -452,7 +458,7 @@ body {
   color: var(--clr-blue-light);
   outline: 0;
 }
-@media (min-width: 48.75em) {
+@media (min-width: 60em) {
   .nav-mobile {
     display: none;
   }

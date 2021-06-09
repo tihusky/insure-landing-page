@@ -1,3 +1,9 @@
+/* beautify ignore:start */
+
+@use "../abstracts/variables" as *;
+
+/* beautify ignore:end */
+
 .btn {
 	display: inline-block;
 	border: 0;
@@ -48,7 +54,7 @@
 .btn-nav-mobile {
 	padding: 0;
 
-	@media (min-width: 48.75em) {
+	@media (min-width: $tablet) {
 		display: none;
 	}
 }
