@@ -60,6 +60,16 @@ body {
 		font-size: 3rem;
 		letter-spacing: -0.67px;
 	}
+
+	@media (min-width: $tablet) {
+		font-size: 3.5rem;
+		letter-spacing: -0.78px;
+
+		&--large {
+			font-size: 4.5rem;
+			letter-spacing: -1px;
+		}
+	}
 }
 
 .heading-tertiary {
@@ -94,6 +104,20 @@ body {
 .ta-left-tablet {
 	@media (min-width: $tablet) {
 		text-align: left;
+
+		h1,
+		h2,
+		h3,
+		p {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+.ta-right-tablet {
+	@media (min-width: $tablet) {
+		text-align: right;
 
 		h1,
 		h2,
