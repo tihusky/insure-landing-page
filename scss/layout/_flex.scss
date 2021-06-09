@@ -4,11 +4,20 @@
 
 /* beautify ignore:end */
 
-.flex {
+.flex-evenly,
+.flex-auto {
 	@media (min-width: $tablet) {
 		display: flex;
 		gap: var(--flex-gap);
 	}
+}
+
+.flex-evenly .column {
+	flex: 1 1 100%;
+}
+
+.flex-auto .column {
+	flex: 1 1 auto;
 }
 
 .column {
@@ -20,11 +29,6 @@
 
 	&-last {
 		order: 1;
-	}
-
-	&-4x {
-		flex-grow: 4;
-		flex-basis: 400%;
 	}
 }
 
