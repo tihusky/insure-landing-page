@@ -5,60 +5,26 @@
 /* beautify ignore:end */
 
 .flex {
-	display: flex;
-}
-
-.column {
-	flex: 0 1 100%;
-
 	@media (min-width: $tablet) {
-		&-25 {
-			max-width: 25%;
-		}
-
-		&-33 {
-			max-width: 33.3333%;
-		}
-
-		&-50 {
-			max-width: 50%;
-		}
+		display: flex;
+		gap: var(--flex-gap);
 	}
 }
 
-//////////////////////////////
-// flex-wrap
+.column {
+	flex: 1 1 100%;
 
-.fw-wrap {
-	flex-wrap: wrap;
-}
+	&-first {
+		order: -1;
+	}
 
-//////////////////////////////
-// row-gap
+	&-last {
+		order: 1;
+	}
 
-.gap-vertical {
-	row-gap: var(--gap-vertical) !important;
-}
-
-//////////////////////////////
-// column-gap
-
-.gap-horizontal {
-	column-gap: var(--gap-horizontal) !important;
-
-	// Reserve space for horizontal gaps
-	@media (min-width: $tablet) {
-		& .column-25 {
-			max-width: calc((100% - var(--gap-horizontal) * 3) / 4);
-		}
-
-		& .column-33 {
-			max-width: calc((100% - var(--gap-horizontal) * 2) / 3);
-		}
-
-		& .column-50 {
-			max-width: calc((100% - var(--gap-horizontal) * 1) / 2);
-		}
+	&-4x {
+		flex-grow: 4;
+		flex-basis: 400%;
 	}
 }
 
