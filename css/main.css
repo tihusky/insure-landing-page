@@ -9,6 +9,7 @@
   --clr-grey-light: rgb(131, 125, 136);
   --clr-grey-dark: rgb(44, 40, 48);
   --clr-accent: rgb(195, 150, 198);
+  --clr-border: rgb(218, 218, 218);
   --header-height: 6.25rem;
   --flex-gap: 1.875rem;
 }
@@ -52,6 +53,10 @@ img {
 
 .mt-huge {
   margin-top: 5rem !important;
+}
+
+.border-top {
+  border-top: 1px solid var(--clr-border);
 }
 
 .divider-top {
@@ -228,6 +233,53 @@ body {
   justify-content: space-between;
 }
 
+/* beautify ignore:start */
+/* beautify ignore:end */
+.footer {
+  margin-top: 8.75rem;
+  padding: 5.5rem 1.5rem;
+  background: url("../images/bg-pattern-footer-mobile.svg") no-repeat center top/contain, var(--clr-offwhite);
+}
+@media (min-width: 60em) {
+  .footer {
+    background: url("../images/bg-pattern-footer-desktop.svg") no-repeat top left, var(--clr-offwhite);
+  }
+}
+
+.footer-nav {
+  text-align: center;
+}
+.footer-nav__title, .footer-nav__link {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.footer-nav__title {
+  margin: 0;
+  color: var(--clr-grey-light);
+}
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-nav__item:not(:first-child) {
+  margin-top: 1rem;
+}
+.footer-nav__link {
+  color: var(--clr-grey-dark);
+  text-decoration: none;
+}
+.footer-nav__link:focus, .footer-nav__link:hover {
+  text-decoration: underline;
+}
+@media (min-width: 60em) {
+  .footer-nav {
+    text-align: left;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -306,12 +358,22 @@ body {
   }
 }
 
+/* beautify ignore:start */
+/* beautify ignore:end */
 .logo {
   width: 7rem;
 }
 .logo img {
   display: block;
   max-width: 100%;
+}
+.logo--footer {
+  margin: 0 auto;
+}
+@media (min-width: 60em) {
+  .logo--footer {
+    margin: 0;
+  }
 }
 
 .navbar {
@@ -393,6 +455,36 @@ body {
 @media (min-width: 48.75em) {
   .nav-mobile {
     display: none;
+  }
+}
+
+/* beautify ignore:start */
+/* beautify ignore:end */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.social-icons__item:not(:first-child) {
+  margin-left: 1rem;
+}
+.social-icons__link {
+  display: block;
+  color: var(--clr-grey-light);
+}
+.social-icons__link:focus, .social-icons__link:hover {
+  color: var(--clr-grey-dark);
+}
+.social-icons__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+@media (min-width: 60em) {
+  .social-icons {
+    margin: 0;
   }
 }
 

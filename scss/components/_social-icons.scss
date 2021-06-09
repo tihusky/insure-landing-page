@@ -1,0 +1,37 @@
+/* beautify ignore:start */
+
+@use "../abstracts/variables" as *;
+
+/* beautify ignore:end */
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0 0;
+	padding: 0;
+	list-style: none;
+
+	&__item:not(:first-child) {
+		margin-left: 1rem;
+	}
+
+	&__link {
+		display: block;
+		color: var(--clr-grey-light);
+
+		&:focus,
+		&:hover {
+			color: var(--clr-grey-dark);
+		}
+	}
+
+	&__icon {
+		width: 1.5rem;
+		height: 1.5rem;
+		fill: currentColor;
+	}
+
+	@media (min-width: $tablet) {
+		margin: 0;
+	}
+}
