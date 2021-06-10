@@ -1,0 +1,55 @@
+/* beautify ignore:start */
+
+@use "../abstracts/variables" as *;
+
+/* beautify ignore:end */
+
+.footer-nav {
+	text-align: center;
+
+	&__column {
+		margin-top: 2.5rem;
+	}
+
+	&__title,
+	&__link {
+		font-size: 0.8125rem;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		margin: 0;
+		color: var(--clr-grey-light);
+	}
+
+	&__list {
+		margin-top: 2.25rem;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item:not(:first-child) {
+		margin-top: 1rem;
+	}
+
+	&__link {
+		color: var(--clr-grey-dark);
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@media (min-width: $tablet) {
+		display: flex;
+		text-align: left;
+
+		&__column {
+			flex: 1;
+		}
+	}
+}
