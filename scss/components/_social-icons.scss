@@ -18,10 +18,16 @@
 	&__link {
 		display: block;
 		color: var(--clr-grey-light);
+		transition: transform 0.25s;
 
 		&:focus,
 		&:hover {
 			color: var(--clr-grey-dark);
+			transform: scale(1.25) translateY(-3px);
+		}
+
+		&:focus-visible {
+			outline: 0;
 		}
 	}
 

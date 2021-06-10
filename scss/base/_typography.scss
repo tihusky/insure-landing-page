@@ -11,6 +11,11 @@ body {
 	font-weight: 400;
 }
 
+a:focus-visible {
+	outline: 2px dashed var(--clr-grey-dark);
+	outline-offset: 3px;
+}
+
 //////////////////////////////
 // Text Colours
 
