@@ -223,30 +223,20 @@ a:focus-visible {
   }
 }
 
-.flex-evenly .column {
+.flex-evenly > * {
   flex: 1 1 100%;
 }
 
-.flex-auto .column {
+.flex-auto > * {
   flex: 1 1 auto;
 }
 
-.column {
-  flex: 1 1 100%;
-}
-.column-first {
+.flex-item--first {
   order: -1;
-}
-.column-last {
-  order: 1;
 }
 
 .ai-center {
   align-items: center;
-}
-
-.jc-between {
-  justify-content: space-between;
 }
 
 /* beautify ignore:start */
@@ -525,6 +515,7 @@ a:focus-visible {
 @media (min-width: 60em) {
   .social-icons {
     margin: 0;
+    justify-content: flex-end;
   }
 }
 

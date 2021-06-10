@@ -12,24 +12,16 @@
 	}
 }
 
-.flex-evenly .column {
+.flex-evenly > * {
 	flex: 1 1 100%;
 }
 
-.flex-auto .column {
+.flex-auto > * {
 	flex: 1 1 auto;
 }
 
-.column {
-	flex: 1 1 100%;
-
-	&-first {
-		order: -1;
-	}
-
-	&-last {
-		order: 1;
-	}
+.flex-item--first {
+	order: -1;
 }
 
 //////////////////////////////
@@ -37,11 +29,4 @@
 
 .ai-center {
 	align-items: center;
-}
-
-//////////////////////////////
-// justify-content
-
-.jc-between {
-	justify-content: space-between;
 }
